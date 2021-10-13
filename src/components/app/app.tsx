@@ -1,7 +1,9 @@
 import * as React from 'react';
 
+import { Header } from '../header/header'
+
 export function App(): JSX.Element {
     return (
-        <h1>There will be placed markup of Cinemaddict</h1>
+        <Header />
     )
 }
