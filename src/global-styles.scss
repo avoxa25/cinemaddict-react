@@ -18,7 +18,7 @@
 
 
 html {
-  background: #121213 url('../images/background.png') no-repeat 60% 0;
+  background: #121213 url('images/background.png') no-repeat 60% 0;
   display: flex;
   color: var(--text-color);
   font-size: var(--font-size);
@@ -428,30 +428,30 @@ button {
 }
 
 .film-card__controls-item--add-to-watchlist {
-  background-image: url('../images/icons/icon-watchlist.svg');
+  background-image: url('images/icons/icon-watchlist.svg');
   background-size: 17px 15px;
 }
 
 .film-card__controls-item--mark-as-watched {
-  background-image: url('../images/icons/icon-watched.svg');
+  background-image: url('images/icons/icon-watched.svg');
   background-size: 14px 10px;
 }
 
 .film-card__controls-item--favorite {
-  background-image: url('../images/icons/icon-favorite.svg');
+  background-image: url('images/icons/icon-favorite.svg');
   background-size: 18px 18px;
 }
 
 .film-card__controls-item--active.film-card__controls-item--add-to-watchlist {
-  background-image: url('../images/icons/icon-watchlist-active.svg')
+  background-image: url('images/icons/icon-watchlist-active.svg')
 }
 
 .film-card__controls-item--active.film-card__controls-item--mark-as-watched {
-  background-image: url('../images/icons/icon-watched-active.svg')
+  background-image: url('images/icons/icon-watched-active.svg')
 }
 
 .film-card__controls-item--active.film-card__controls-item--favorite {
-  background-image: url('../images/icons/icon-favorite-active.svg')
+  background-image: url('images/icons/icon-favorite-active.svg')
 }
 
 
@@ -512,7 +512,7 @@ button {
 
 .footer {
   align-items: center;
-  background: url('../images/background.png') no-repeat 50% 0;
+  background: url('images/background.png') no-repeat 50% 0;
   display: flex;
   height: 100px;
 }
@@ -712,29 +712,29 @@ button {
   background-color: transparent;
 }
 .film-details__control-label--watchlist::before {
-  background: url("../images/icons/icon-watchlist.svg") no-repeat;
+  background: url("images/icons/icon-watchlist.svg") no-repeat;
   background-size: 17px 15px;
 }
 .film-details__control-label--watched::before {
-  background: url("../images/icons/icon-watched.svg") no-repeat;
+  background: url("images/icons/icon-watched.svg") no-repeat;
   background-size: 17px 10px;
   top: 7px;
 }
 .film-details__control-label--favorite::before {
-  background: url("../images/icons/icon-favorite.svg") no-repeat;
+  background: url("images/icons/icon-favorite.svg") no-repeat;
   background-size: 18px;
 }
 .film-details__control-input:checked + .film-details__control-label {
   color: #f5df00;
 }
 .film-details__control-input:checked + .film-details__control-label--watchlist::before {
-  background-image: url("../images/icons/icon-watchlist-active.svg");
+  background-image: url("images/icons/icon-watchlist-active.svg");
 }
 .film-details__control-input:checked + .film-details__control-label--watched::before {
-  background-image: url("../images/icons/icon-watched-active.svg");
+  background-image: url("images/icons/icon-watched-active.svg");
 }
 .film-details__control-input:checked + .film-details__control-label--favorite::before {
-  background-image: url("../images/icons/icon-favorite-active.svg");
+  background-image: url("images/icons/icon-favorite-active.svg");
 }
 .film-details__comment {
   display: flex;
@@ -945,7 +945,7 @@ button {
   width: 30px;
   height: 30px;
 
-  background-image: url('../images/emoji/puke.png');
+  background-image: url('images/emoji/puke.png');
   background-size: 90%;
   background-position: center;
   background-repeat: no-repeat;
@@ -960,7 +960,6 @@ button {
   width: 30px;
   height: 30px;
 
-  background-image: url('../images/emoji/trophy.png');
   background-size: 90%;
   background-position: center;
   background-repeat: no-repeat;
