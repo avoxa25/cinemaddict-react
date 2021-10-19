@@ -1,4 +1,22 @@
-export const films = [
+export type FilmType = {
+  name: string,
+  rating: number,
+  info: {
+    year: number,
+    duration: string,
+    genre: string
+  },
+  imgLink: string,
+  description: string,
+  comments: 
+    {
+      author: string,
+      date: string,
+      value: string
+    }[]
+}
+
+export const films: FilmType[] = [
   {
     name: `The Dance of Life`,
     rating: 8.3,
