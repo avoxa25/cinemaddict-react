@@ -30,16 +30,8 @@ export default function Films(): JSX.Element {
         <FilmsList films={currentFilmsList} />
         <button className="films-list__show-more" onClick={changeListState}>{buttonValue}</button>
       </section>
-
-      <section className="films-list--extra">
-        <h2 className="films-list__title">Top rated</h2>
-        <TopRated films={filmsList} />
-      </section>
-
-      <section className="films-list--extra">
-        <h2 className="films-list__title">Most commented</h2>
-        <MostCommented films={filmsList} />
-      </section>
+      <TopRated films={filmsList} />
+      <MostCommented films={filmsList} />
     </section>
   )
 }
