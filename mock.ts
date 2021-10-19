@@ -89,4 +89,40 @@ export const films = [
       }
     ]
   },
+  {
+    name: `Popeye the Sailor Meets Sindbad the Sailor`,
+    rating: 6.3,
+    info: {
+      year: 1936,
+      duration: `16m`,
+      genre: `Cartoon`
+    },
+    imgLink: `./images/posters/popeye-meets-sinbad.png`,
+    description: `In this short, Sindbad the Sailor (presumably Bluto playing a "role") proclaims himself, in song, to be the greatest sailor, adventurer and…`,
+    comments: [
+      {
+        author: ``,
+        date: ``,
+        value: ``
+      }
+    ]
+  },
+  {
+    name: `Popeye the Sailor Meets Sindbad the Sailor`,
+    rating: 6.3,
+    info: {
+      year: 1936,
+      duration: `16m`,
+      genre: `Cartoon`
+    },
+    imgLink: `./images/posters/popeye-meets-sinbad.png`,
+    description: `In this short, Sindbad the Sailor (presumably Bluto playing a "role") proclaims himself, in song, to be the greatest sailor, adventurer and…`,
+    comments: [
+      {
+        author: ``,
+        date: ``,
+        value: ``
+      }
+    ]
+  },
 ]
