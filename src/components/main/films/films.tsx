@@ -2,6 +2,8 @@ import React from 'react';
 import { films } from '../../../../mock';
 
 export default function Films(): JSX.Element {
+  if (!test) return <h2>There are no movies in our database</h2>
+
   const filmsList: JSX.Element[] = films.map(film => {
     return (
       <article className="film-card">
