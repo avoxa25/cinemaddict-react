@@ -16,7 +16,7 @@ export default function FilmsList(props: any): JSX.Element {
         </p>
         <img src={film.imgLink} alt={film.name + "'s poster"} className="film-card__poster" />
         <p className="film-card__description">{film.description}</p>
-        <a className="film-card__comments">{film.comments.length}</a>
+        <a className="film-card__comments">{film.comments.length !== 1? film.comments.length + ' comments': film.comments.length + ' comment'}</a>
         <form className="film-card__controls">
           <button className="film-card__controls-item button film-card__controls-item--add-to-watchlist film-card__controls-item--active">Add to watchlist</button>
           <button className="film-card__controls-item button film-card__controls-item--mark-as-watched ">Mark as watched</button>
