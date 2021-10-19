@@ -1,101 +1,36 @@
 import React from 'react';
+import { films } from '../../../../mock';
 
 export default function Films(): JSX.Element {
+  const filmsList: JSX.Element[] = films.map(film => {
+    return (
+      <article className="film-card">
+      <h3 className="film-card__title">{film.name}</h3>
+      <p className="film-card__rating">{film.rating}</p>
+      <p className="film-card__info">
+        <span className="film-card__year">{film.info.year}</span>
+        <span className="film-card__duration">{film.info.duration}</span>
+        <span className="film-card__genre">{film.info.genre}</span>
+      </p>
+      <img src={film.imgLink} alt={film.name + "'s poster"} className="film-card__poster" />
+      <p className="film-card__description">{film.description}</p>
+      <a className="film-card__comments">{film.comments.length}</a>
+      <form className="film-card__controls">
+        <button className="film-card__controls-item button film-card__controls-item--add-to-watchlist film-card__controls-item--active">Add to watchlist</button>
+        <button className="film-card__controls-item button film-card__controls-item--mark-as-watched">Mark as watched</button>
+        <button className="film-card__controls-item button film-card__controls-item--favorite">Mark as favorite</button>
+      </form>
+    </article>
+    )
+  })
+
   return (
     <section className="films">
       <section className="films-list">
         <h2 className="films-list__title visually-hidden">All movies. Upcoming</h2>
 
         <div className="films-list__container">
-          <article className="film-card">
-            <h3 className="film-card__title">The Dance of Life</h3>
-            <p className="film-card__rating">8.3</p>
-            <p className="film-card__info">
-              <span className="film-card__year">1929</span>
-              <span className="film-card__duration">1h 55m</span>
-              <span className="film-card__genre">Musical</span>
-            </p>
-            <img src="./images/posters/the-dance-of-life.jpg" alt="" className="film-card__poster" />
-            <p className="film-card__description">Burlesque comic Ralph "Skid" Johnson (Skelly), and specialty dancer Bonny Lee King (Carroll), end up together on a cold, rainy night at a tr…</p>
-            <a className="film-card__comments">5 comments</a>
-            <form className="film-card__controls">
-              <button className="film-card__controls-item button film-card__controls-item--add-to-watchlist">Add to watchlist</button>
-              <button className="film-card__controls-item button film-card__controls-item--mark-as-watched">Mark as watched</button>
-              <button className="film-card__controls-item button film-card__controls-item--favorite">Mark as favorite</button>
-            </form>
-          </article>
-
-          <article className="film-card">
-            <h3 className="film-card__title">Sagebrush Trail</h3>
-            <p className="film-card__rating">3.2</p>
-            <p className="film-card__info">
-              <span className="film-card__year">1933</span>
-              <span className="film-card__duration">54m</span>
-              <span className="film-card__genre">Western</span>
-            </p>
-            <img src="./images/posters/sagebrush-trail.jpg" alt="" className="film-card__poster" />
-            <p className="film-card__description">Sentenced for a murder he did not commit, John Brant escapes from prison determined to find the real killer.By chance Brant's narrow escap…</p>
-            <a className="film-card__comments">89 comments</a>
-            <form className="film-card__controls">
-              <button className="film-card__controls-item button film-card__controls-item--add-to-watchlist film-card__controls-item--active">Add to watchlist</button>
-              <button className="film-card__controls-item button film-card__controls-item--mark-as-watched">Mark as watched</button>
-              <button className="film-card__controls-item button film-card__controls-item--favorite">Mark as favorite</button>
-            </form>
-          </article>
-
-          <article className="film-card">
-            <h3 className="film-card__title">The Man with the Golden Arm</h3>
-            <p className="film-card__rating">9.0</p>
-            <p className="film-card__info">
-              <span className="film-card__year">1955</span>
-              <span className="film-card__duration">1h 59m</span>
-              <span className="film-card__genre">Drama</span>
-            </p>
-            <img src="./images/posters/the-man-with-the-golden-arm.jpg" alt="" className="film-card__poster" />
-            <p className="film-card__description">Frankie Machine (Frank Sinatra) is released from the federal Narcotic Farm in Lexington, Kentucky with a set of drums and a new outlook on…</p>
-            <a className="film-card__comments">18 comments</a>
-            <form className="film-card__controls">
-              <button className="film-card__controls-item button film-card__controls-item--add-to-watchlist">Add to watchlist</button>
-              <button className="film-card__controls-item button film-card__controls-item--mark-as-watched film-card__controls-item--active">Mark as watched</button>
-              <button className="film-card__controls-item button film-card__controls-item--favorite">Mark as favorite</button>
-            </form>
-          </article>
-
-          <article className="film-card">
-            <h3 className="film-card__title">Santa Claus Conquers the Martians</h3>
-            <p className="film-card__rating">2.3</p>
-            <p className="film-card__info">
-              <span className="film-card__year">1964</span>
-              <span className="film-card__duration">1h 21m</span>
-              <span className="film-card__genre">Comedy</span>
-            </p>
-            <img src="./images/posters/santa-claus-conquers-the-martians.jpg" alt="" className="film-card__poster" />
-            <p className="film-card__description">The Martians Momar ("Mom Martian") and Kimar ("King Martian") are worried that their children Girmar ("Girl Martian") and Bomar ("Boy Marti…</p>
-            <a className="film-card__comments">465 comments</a>
-            <form className="film-card__controls">
-              <button className="film-card__controls-item button film-card__controls-item--add-to-watchlist">Add to watchlist</button>
-              <button className="film-card__controls-item button film-card__controls-item--mark-as-watched">Mark as watched</button>
-              <button className="film-card__controls-item button film-card__controls-item--favorite film-card__controls-item--active">Mark as favorite</button>
-            </form>
-          </article>
-
-          <article className="film-card">
-            <h3 className="film-card__title">Popeye the Sailor Meets Sindbad the Sailor</h3>
-            <p className="film-card__rating">6.3</p>
-            <p className="film-card__info">
-              <span className="film-card__year">1936</span>
-              <span className="film-card__duration">16m</span>
-              <span className="film-card__genre">Cartoon</span>
-            </p>
-            <img src="./images/posters/popeye-meets-sinbad.png" alt="" className="film-card__poster" />
-            <p className="film-card__description">In this short, Sindbad the Sailor (presumably Bluto playing a "role") proclaims himself, in song, to be the greatest sailor, adventurer and…</p>
-            <a className="film-card__comments">0 comments</a>
-            <form className="film-card__controls">
-              <button className="film-card__controls-item button film-card__controls-item--add-to-watchlist film-card__controls-item--active">Add to watchlist</button>
-              <button className="film-card__controls-item button film-card__controls-item--mark-as-watched film-card__controls-item--active">Mark as watched</button>
-              <button className="film-card__controls-item button film-card__controls-item--favorite film-card__controls-item--active">Mark as favorite</button>
-            </form>
-          </article>
+          {filmsList}
         </div>
 
         <button className="films-list__show-more">Show more</button>
