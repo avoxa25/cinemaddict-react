@@ -86,6 +86,11 @@ export const films = [
         author: ``,
         date: ``,
         value: ``
+      },
+      {
+        author: ``,
+        date: ``,
+        value: ``
       }
     ]
   },
