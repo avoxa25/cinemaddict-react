@@ -13,7 +13,10 @@ export type FilmType = {
       author: string,
       date: string,
       value: string
-    }[]
+    }[],
+    inWatchlist: boolean,
+    isWatched: boolean,
+    isFavorite: boolean
 }
 
 export const films: FilmType[] = [
@@ -33,7 +36,10 @@ export const films: FilmType[] = [
         date: ``,
         value: ``
       }
-    ]
+    ],
+    inWatchlist: false,
+    isWatched: false,
+    isFavorite: false
   },
   {
     name: `Sagebrush Trail`,
@@ -51,7 +57,10 @@ export const films: FilmType[] = [
         date: ``,
         value: ``
       }
-    ]
+    ],
+    inWatchlist: false,
+    isWatched: false,
+    isFavorite: false
   },
   {
     name: `The Man with the Golden Arm`,
@@ -69,7 +78,10 @@ export const films: FilmType[] = [
         date: ``,
         value: ``
       }
-    ]
+    ],
+    inWatchlist: false,
+    isWatched: false,
+    isFavorite: false
   },
   {
     name: `Santa Claus Conquers the Martians`,
@@ -87,7 +99,10 @@ export const films: FilmType[] = [
         date: ``,
         value: ``
       }
-    ]
+    ],
+    inWatchlist: false,
+    isWatched: false,
+    isFavorite: false
   },
   {
     name: `Popeye the Sailor Meets Sindbad the Sailor`,
@@ -110,7 +125,10 @@ export const films: FilmType[] = [
         date: ``,
         value: ``
       }
-    ]
+    ],
+    inWatchlist: false,
+    isWatched: false,
+    isFavorite: false
   },
   {
     name: `Popeye the Sailor Meets Sindbad the Sailor`,
@@ -128,7 +146,10 @@ export const films: FilmType[] = [
         date: ``,
         value: ``
       }
-    ]
+    ],
+    inWatchlist: false,
+    isWatched: false,
+    isFavorite: false
   },
   {
     name: `Popeye the Sailor Meets Sindbad the Sailor`,
@@ -146,6 +167,9 @@ export const films: FilmType[] = [
         date: ``,
         value: ``
       }
-    ]
+    ],
+    inWatchlist: false,
+    isWatched: false,
+    isFavorite: false
   },
 ]
