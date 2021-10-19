@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { films } from '../../../../mock';
 import FilmsList from './films-list/films-list';
+import TopRated from './top-rated/top-rated';
 
 export default function Films(): JSX.Element {
   if (!films) return <h2>There are no movies in our database</h2>
@@ -37,9 +38,7 @@ export default function Films(): JSX.Element {
 
       <section className="films-list--extra">
         <h2 className="films-list__title">Top rated</h2>
-
-        <div className="films-list__container">
-        </div>
+          <TopRated films={filmsList} />
       </section>
 
       <section className="films-list--extra">
