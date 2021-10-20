@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { FilmType } from '../../../mock';
 import Films from './films/films';
 import Header from './header/header';
 
-export function Main(): JSX.Element {
+export function Main(props: { films: FilmType[] }): JSX.Element {
     return (
         <main className="main">
             <Header />
