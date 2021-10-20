@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { films } from '../../../../mock';
+import { FilmType } from '../../../../mock';
 import FilmsList from './films-list/films-list';
 import MostCommented from './most-commented/most-commented';
 import TopRated from './top-rated/top-rated';
 
-export default function Films(): JSX.Element {
+export default function Films(props: {films: FilmType[]}): JSX.Element {
+  const films = props.films;
   if (!films) return <h2>There are no movies in our database</h2>
 
   const filmsList = films;
